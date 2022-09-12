@@ -1,3 +1,5 @@
+package homework.lesson_1_9;
+
 public class Book {
    private String title;
    private int publishDate;
@@ -12,24 +14,18 @@ public class Book {
     public String getTitle() {
         return title;
     }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public int getPublishDate() {
         return publishDate;
     }
-
     public void setPublishDate(int publishDate) {
         this.publishDate = publishDate;
     }
-
     public Author getAuthor() {
         return author;
     }
 
-    public void setAuthor(Author author) {
-        this.author = author;
+    @Override
+    public String toString() {
+        return "Книга - " + title + ", Дата публикации - " + publishDate + ", " + author;
     }
 }
